@@ -1,4 +1,5 @@
 import GoogleTextInput from "@/components/GoogleTextInput"
+import Map from "@/components/Map"
 import RideCard from "@/components/RideCard"
 import { icons, images } from "@/constants"
 import { Ride } from "@/types/type"
@@ -190,9 +191,13 @@ export default function Page() {
                 Your current location
               </Text>
               <View className="flex flex-row items-center bg-transparent h-[300px]">
-                {/* TODO: MAP */}
+                <Map />
               </View>
             </>
+
+            <Text className="text-xl font-JakartaBold mt-5 mb-3">
+              Recent Rides
+            </Text>
           </>
         )}
       />
